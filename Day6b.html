@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #ab{
+        background-image: url(./Day6pic.png);
+        height:100vh;
+        width:100vw;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+    }
+    #bc{
+        background-color: black;
+        color:white;
+        height:350px;
+        width:350px;
+        opacity:0.7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #ra {
+      margin: 5px 0;
+      text-align: left;
+      font-size: 14px;
+    }
+    #sa{
+      background: #27ae60;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      margin-top: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-left:5px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background: transparent;
+      color: white;
+    }
+    #pic{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      top: 50%;
+      left: 50%;
+      background-color: white;
+      margin-left:45px;
+      margin-top:-30px;
+    }
+    #sh{
+        margin-bottom:60px; 
+    }
+</style>
+<body>
+    <div id="ab">
+        <div id="bc">
+            <div id="sh">
+            <img src="./Day6logo.jpg" alt="Avatar" id="pic" />
+            <h4 style="text-align: center;margin-top: 0px;">LOGIN WINDOW</h4>
+            <form>
+            <input type="email" placeholder="Your Email Address" required />
+            <br>
+            <input type="password" placeholder="Your Password" required />
+            <div id="ra">
+                <input type="checkbox" required /> Agree With <a href="#">Terms & Condition</a>
+            </div>
+            <button type="submit" id="sa">Login</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
